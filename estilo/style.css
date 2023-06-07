@@ -1,0 +1,126 @@
+@charset " UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: rgba(255, 157, 46, 0.766);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.515)
+}
+
+section#login>div#imagem {
+    background: blueviolet url(../estilo/tarde.png) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+
+}
+
+section#login>div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario>h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario>p {
+    font-size: 0.8em;
+}
+
+form>div.campo {
+    background-color: rgb(247, 184, 36);
+    border: 2px solid orange;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+
+}
+
+div.campo>input {
+    background-color: rgba(255, 166, 0, 0.431);
+    font-size: 1em;
+    width: calc(100% -44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 18px;
+    transform: translateY(0px);
+}
+
+div.campo>input:focus-within {
+    background-color: white;
+
+}
+
+
+form>input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form>input[type=submit]:hover {
+    background-color: orange;
+}
+
+form>a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form>a.botao:hover {
+    background-color: orange;
+}
+
+form>a.botao>i {
+    font-size: 0.8em;
+}
